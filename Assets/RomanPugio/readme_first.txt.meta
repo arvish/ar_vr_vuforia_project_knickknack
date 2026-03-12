@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 60e138601931dbf4f9be9672b76a87d6
+timeCreated: 1451416010
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19536
+  packageName: Roman pugio
+  packageVersion: 1.02b
+  assetPath: Assets/RomanPugio/readme_first.txt
+  uploadId: 96032
