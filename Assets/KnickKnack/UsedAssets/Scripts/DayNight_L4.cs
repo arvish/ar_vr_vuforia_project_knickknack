@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class DayNightL4 : MonoBehaviour
 {
+
+    [SerializeField] private bool manualOverride = false;
+    [SerializeField] private bool forcedNight = false;
+
     [Header("Rome time")]
     [SerializeField] private string timeZoneId = "Europe/Rome";
     [SerializeField] private int dayStartHour = 7;     // 07:00 Rome time
@@ -38,7 +42,7 @@ public class DayNightL4 : MonoBehaviour
 
     void Tick()
     {
-        bool nightNow = IsNightNow();
+        bool nightNow = manualOverride ? forcedNight : IsNightNow();
         if (nightNow != isNight)
             Apply(nightNow);
     }
@@ -93,5 +97,33 @@ public class DayNightL4 : MonoBehaviour
             // Windows fallback commonly works
             return TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
         }
+    }
+
+    public void ToggleManualOverrideInvert()
+    {
+        // Turn override on if it was off. If already on, turn it off.
+        manualOverride = !manualOverride;
+
+        if (manualOverride)
+        {
+            // When override turns on, invert the current mode
+            forcedNight = !isNightApplied();
+        }
+
+        // Apply immediately
+        Apply(manualOverride ? forcedNight : IsNightNow());
+    }
+
+    public void SetManualOverride(bool enabled, bool night)
+    {
+        manualOverride = enabled;
+        forcedNight = night;
+        Apply(manualOverride ? forcedNight : IsNightNow());
+    }
+
+    // helper to read current applied state safely
+    private bool isNightApplied()
+    {
+        return isNight;
     }
 }

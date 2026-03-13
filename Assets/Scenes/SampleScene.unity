@@ -219,6 +219,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 448674960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &198989213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f303025c98fc42c4bb60e6bb50d36051,
+    type: 3}
+  m_PrefabInstance: {fileID: 448674960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &198989216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198989213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4167f01142d7b4790d0d308e2f540c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  degreesPerSecond: 12
 --- !u!1 &205136831
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +949,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f303025c98fc42c4bb60e6bb50d36051,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 198989216}
   m_SourcePrefab: {fileID: 100100000, guid: f303025c98fc42c4bb60e6bb50d36051, type: 3}
 --- !u!1 &462931765
 GameObject:
@@ -1679,6 +1702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64de889e65783f44b810271aefe293cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  manualOverride: 0
+  forcedNight: 0
   timeZoneId: Europe/Rome
   dayStartHour: 7
   nightStartHour: 19
@@ -1815,7 +1840,7 @@ MonoBehaviour:
   mTargetName: classCube
   mDatasetName: Vuforia/PrezVishCube.xml
   mCastedBehaviour: {fileID: 979651939}
-  mBaseMesh: {fileID: 1508809186}
+  mBaseMesh: {fileID: 1348616529}
 --- !u!4 &1065274772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4655282139349800, guid: 89194aad41c1bc945b7d77ebe7ee9cc5,
@@ -1921,7 +1946,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1306876954}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1508809186
+--- !u!43 &1348616529
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2237,6 +2262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1565946238}
+  - component: {fileID: 1565946239}
   m_Layer: 0
   m_Name: L5_Controller
   m_TagString: Untagged
@@ -2259,6 +2285,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 979651940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565946239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565946237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120580182d127bb409e9fc2eb2977858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  trackedObject: {fileID: 979651940}
+  uiFacesRoot: {fileID: 1577204564}
+  optionalToggle: {fileID: 0}
+  upsideDownThreshold: 0
+  debounceSeconds: 0.8
+  dayNightController: {fileID: 970972152}
+  globeSpin: {fileID: 198989216}
 --- !u!1 &1577204564
 GameObject:
   m_ObjectHideFlags: 0
