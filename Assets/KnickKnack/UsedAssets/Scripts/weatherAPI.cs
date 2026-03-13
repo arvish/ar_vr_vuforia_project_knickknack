@@ -6,7 +6,7 @@ using TMPro;
 public class weatherAPI : MonoBehaviour
 {
     [Header("OpenWeather")]
-    [SerializeField] private string apiKey = "3989d9f2cac73c88652c6ecb7e7a8bd3"; // don't commit this
+    [SerializeField] private string apiKey = "YOUR_KEY"; // don't commit this
     [SerializeField] private string city = "Rome";
     [SerializeField] private string countryCode = "IT";
     [SerializeField] private bool useMetric = true;
