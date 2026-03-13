@@ -104,7 +104,7 @@ This is where the project becomes “alive”:
 ![Night mode](docs/img/Figure5.png)
 
 **Figure 6 — Day mode (forced or auto): brighter museum lighting + fill**  
-![Day mode](docs/img/Figure2.png)
+![Day mode](docs/img/Figure7.png)
 
 ---
 
