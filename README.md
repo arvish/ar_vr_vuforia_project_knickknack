@@ -59,12 +59,10 @@ The knick-knack grows **vertically** from the cube base so the silhouette reads 
 
 #### Screenshots 
 **Figure 1 — Full L1 relic stack anchored on the cube**  
-*(TODO: add image — show cube in hand + full trophy stack visible)*  
-`![L1 relic stack anchored on cube](docs/images/fig1_l1_relic_stack.jpg)`
+![L1 relic stack anchored on cube](docs/img/Figure6.png)
 
-**Figure 2 — Close-up of the custom Earth globe + ITALIA plaque**  
-*(TODO: add image — show globe mapping + bronze plaque readability)*  
-`![Custom globe + plaque](docs/images/fig2_globe_plaque_closeup.jpg)`
+**Figure 2 — Close-up of the custom Earth globe + ITALIA plaque**   
+![Custom globe + plaque](docs/img/Figure3.png)
 
 ---
 
@@ -81,12 +79,10 @@ I also added bronze background panels to improve readability. By the end, the cu
 
 #### Screenshots
 **Figure 3 — L2 faces visible (Location / Weather / Time / Extra)**  
-*(TODO: add image — show at least 3 faces visible through rotation)*  
-`![L2 faces](docs/images/fig3_l2_faces.jpg)`
+![L2 faces](docs/img/Figure1.png)
 
 **Figure 4 — Close-up of a single face panel (readability + styling)**  
-*(TODO: add image — show TMP outline + bronze panel behind text)*  
-`![Face panel close-up](docs/images/fig4_face_panel_closeup.jpg)`
+![4 Face panels close-up](docs/img/Figure4.png)
 
 ---
 
@@ -105,12 +101,10 @@ This is where the project becomes “alive”:
 
 #### Screenshots 
 **Figure 5 — Night mode (Rome night): glow + rim lighting clearly visible**  
-*(TODO: add image — show cyan glow + rim effect)*  
-`![Night mode](docs/images/fig5_night_mode.jpg)`
+![Night mode](docs/img/Figure5.png)
 
 **Figure 6 — Day mode (forced or auto): brighter museum lighting + fill**  
-*(TODO: add image — show day brightness and bronze readability)*  
-`![Day mode](docs/images/fig6_day_mode.jpg)`
+![Day mode](docs/img/Figure2.png)
 
 ---
 
@@ -122,10 +116,7 @@ When flipped:
 - toggles **UI faces** on/off (clean “museum mode” vs “data mode”)
 - toggles **globe spin** on/off (simple but high signal)
 
-#### Screenshots 
-**Figure 7 — L5 flip mode: UI hidden + globe spinning**  
-*(TODO: add image — show spin & UI state clearly)*  
-`![Flip mode](docs/images/fig7_flip_mode.jpg)`
+#### Refer to Demo to view manny other features that cannot be represented via stills
 
 ---
 
