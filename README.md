@@ -11,7 +11,7 @@ A Vuforia **MultiTarget** AR “knick-knack” built in **Unity 6** that turns a
 ---
 
 ## 🎥 Demo Video 
-**Demo link:** *(TODO: add YouTube/portfolio video link)* 
+**Demo link:** *[Link](https://www.youtube.com/watch?v=6CgSs4GOqIo)* 
 
 ---
 
